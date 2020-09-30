@@ -136,10 +136,6 @@ var URI = new Class({
 
 });
 
-URI.prototype.toString = URI.prototype.valueOf = function(){
-	return this.get('value');
-};
-
 URI.regs = {
 	endSlash: /\/$/,
 	scheme: /^(\w+):/,
@@ -147,6 +143,10 @@ URI.regs = {
 };
 
 URI.base = new URI(document.getElements('base[href]', true).getLast(), {base: document.location});
+
+URI.prototype.toString = URI.prototype.valueOf = function(){
+	return this.get('value');
+};
 
 String.implement({
 
