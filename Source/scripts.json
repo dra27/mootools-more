@@ -81,7 +81,7 @@
 		},
 
 		"URI": {
-			"deps": ["More", "String.QueryString", "Selectors"],
+			"deps": ["More", "Class.Extras", "String.QueryString", "Selectors"],
 			"desc": "Provides methods useful in managing the window location and uris."
 		},
 
@@ -450,7 +450,7 @@
 		},
 
 		"Form.Validator.Chinese": {
-			"deps": ["Lang"],
+			"deps": ["Lang", "Form.Validator"],
 			"desc": "Form.Validator messages in Chinese."
 		},
 
